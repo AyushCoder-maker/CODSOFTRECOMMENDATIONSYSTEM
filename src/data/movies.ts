@@ -156,6 +156,84 @@ export const movies: Movie[] = [
     description: 'A young girl enters a world ruled by gods and witches where humans are changed into beasts.',
     cast: ['Rumi Hiiragi', 'Miyu Irino', 'Mari Natsuki'],
     tags: ['coming of age', 'magic', 'adventure', 'Studio Ghibli']
+  },
+  {
+    id: '13',
+    title: 'The Lord of the Rings: The Fellowship of the Ring',
+    genre: ['Adventure', 'Drama', 'Fantasy'],
+    director: 'Peter Jackson',
+    year: 2001,
+    rating: 8.8,
+    duration: 178,
+    poster: 'https://images.pexels.com/photos/7991583/pexels-photo-7991583.jpeg?auto=compress&cs=tinysrgb&w=400',
+    description: 'A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring.',
+    cast: ['Elijah Wood', 'Ian McKellen', 'Orlando Bloom'],
+    tags: ['epic', 'friendship', 'adventure', 'fantasy']
+  },
+  {
+    id: '14',
+    title: 'Titanic',
+    genre: ['Drama', 'Romance'],
+    director: 'James Cameron',
+    year: 1997,
+    rating: 7.8,
+    duration: 194,
+    poster: 'https://images.pexels.com/photos/7991584/pexels-photo-7991584.jpeg?auto=compress&cs=tinysrgb&w=400',
+    description: 'A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.',
+    cast: ['Leonardo DiCaprio', 'Kate Winslet', 'Billy Zane'],
+    tags: ['romance', 'tragedy', 'epic', 'disaster']
+  },
+  {
+    id: '15',
+    title: 'Avatar',
+    genre: ['Action', 'Adventure', 'Fantasy'],
+    director: 'James Cameron',
+    year: 2009,
+    rating: 7.8,
+    duration: 162,
+    poster: 'https://images.pexels.com/photos/7991585/pexels-photo-7991585.jpeg?auto=compress&cs=tinysrgb&w=400',
+    description: 'A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders.',
+    cast: ['Sam Worthington', 'Zoe Saldana', 'Sigourney Weaver'],
+    tags: ['alien world', 'nature', 'war', 'technology']
+  },
+  {
+    id: '16',
+    title: 'The Avengers',
+    genre: ['Action', 'Adventure', 'Sci-Fi'],
+    director: 'Joss Whedon',
+    year: 2012,
+    rating: 8.0,
+    duration: 143,
+    poster: 'https://images.pexels.com/photos/7991586/pexels-photo-7991586.jpeg?auto=compress&cs=tinysrgb&w=400',
+    description: 'Earth\'s mightiest heroes must come together and learn to fight as a team to stop the mischievous Loki.',
+    cast: ['Robert Downey Jr.', 'Chris Evans', 'Scarlett Johansson'],
+    tags: ['superhero', 'team', 'action', 'Marvel']
+  },
+  {
+    id: '17',
+    title: 'Joker',
+    genre: ['Crime', 'Drama', 'Thriller'],
+    director: 'Todd Phillips',
+    year: 2019,
+    rating: 8.4,
+    duration: 122,
+    poster: 'https://images.pexels.com/photos/7991587/pexels-photo-7991587.jpeg?auto=compress&cs=tinysrgb&w=400',
+    description: 'A mentally troubled comedian is disregarded and mistreated by society, leading to a downward spiral of revolution.',
+    cast: ['Joaquin Phoenix', 'Robert De Niro', 'Zazie Beetz'],
+    tags: ['psychological', 'origin story', 'dark', 'society']
+  },
+  {
+    id: '18',
+    title: 'Black Panther',
+    genre: ['Action', 'Adventure', 'Sci-Fi'],
+    director: 'Ryan Coogler',
+    year: 2018,
+    rating: 7.3,
+    duration: 134,
+    poster: 'https://images.pexels.com/photos/7991588/pexels-photo-7991588.jpeg?auto=compress&cs=tinysrgb&w=400',
+    description: 'T\'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people.',
+    cast: ['Chadwick Boseman', 'Michael B. Jordan', 'Lupita Nyong\'o'],
+    tags: ['superhero', 'culture', 'technology', 'Marvel']
   }
 ];
 
