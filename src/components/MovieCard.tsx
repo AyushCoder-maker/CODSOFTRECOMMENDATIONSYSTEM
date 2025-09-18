@@ -90,7 +90,7 @@ export const MovieCard: React.FC<MovieCardProps> = ({
             </div>
             <div className="flex items-center gap-1">
               <Users className="w-4 h-4" />
-              {movie.director.split(' ').pop()}
+              {movie.director}
             </div>
           </div>
         </div>

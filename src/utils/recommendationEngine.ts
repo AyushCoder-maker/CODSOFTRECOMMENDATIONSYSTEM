@@ -55,11 +55,6 @@ export class RecommendationEngine {
 
   // Hybrid recommendations
   getHybridRecommendations(limit: number = 6): Recommendation[] {
-    const ratedMovies = this.getRatedMovies();
-    if (ratedMovies.length === 0) {
-      return this.getPopularMovies(limit);
-    }
-
     const contentRecs = this.getContentBasedRecommendations(limit * 2);
     const collabRecs = this.getCollaborativeRecommendations(limit * 2);
 
@@ -70,7 +65,7 @@ export class RecommendationEngine {
       hybridMap.set(rec.movie.id, {
         ...rec,
         score: rec.score * 0.6, // Weight content-based at 60%
-        reason: `${rec.reason}`
+        reason: `Content match: ${rec.reason}`
       });
     });
 
@@ -78,12 +73,12 @@ export class RecommendationEngine {
       if (hybridMap.has(rec.movie.id)) {
         const existing = hybridMap.get(rec.movie.id)!;
         existing.score += rec.score * 0.4; // Weight collaborative at 40%
-        existing.reason = `${existing.reason} + ${rec.reason}`;
+        existing.reason += ` + ${rec.reason}`;
       } else {
         hybridMap.set(rec.movie.id, {
           ...rec,
           score: rec.score * 0.4,
-          reason: rec.reason
+          reason: `User pattern: ${rec.reason}`
         });
       }
     });
